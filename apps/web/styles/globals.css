@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+
+  body {
+    @apply bg-[#F9FAFB] text-[#111827] dark:bg-[#111827] dark:text-[#F9FAFB];
+  }
+}
+
+@layer components {
+  .button {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+
+  .button-primary {
+    @apply bg-brand-primary text-white hover:bg-brand-primary/90;
+  }
+
+  .button-secondary {
+    @apply bg-brand-accent text-white hover:bg-brand-accent/90;
+  }
+
+  .button-outline {
+    @apply border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800;
+  }
+
+  .button-small {
+    @apply text-sm px-3 py-1;
+  }
+
+  .button-medium {
+    @apply text-base;
+  }
+
+  .button-large {
+    @apply text-lg px-5 py-2.5;
+  }
+
+  .card {
+    @apply rounded-lg overflow-hidden;
+  }
+
+  .card-default {
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm;
+  }
+
+  .card-elevated {
+    @apply bg-white dark:bg-gray-800 shadow-md;
+  }
+
+  .card-title {
+    @apply text-lg font-medium p-4 border-b border-gray-200 dark:border-gray-700;
+  }
+
+  .card-content {
+    @apply p-4;
+  }
+} 
