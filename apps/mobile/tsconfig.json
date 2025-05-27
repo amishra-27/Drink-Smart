@@ -1,11 +1,6 @@
 {
-  "extends": "@drink-smart/config/tsconfig.json",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
-} 
+    "strict": true
+  }
+}

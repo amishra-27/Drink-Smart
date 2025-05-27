@@ -13,7 +13,7 @@
     "clean": "rm -rf .turbo node_modules dist storybook-static"
   },
   "dependencies": {
-    "@drink-smart/config": "workspace:*",
+    "@drink-smart/config": "file:../config",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.72.4",
